@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | Chispas de café</title>
+  <link rel="stylesheet" href="css/contacto.css">
+</head>
+<body>
+  <header id="header"></header>
+
+  <main class="contacto-container">
+    <h2>Contáctanos 📩</h2>
+    <p>Queremos escucharte. Déjanos tu mensaje.</p>
+
+    <div class="contacto-grid">
+    
+      <form class="contacto-form" id="contactForm">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="email">Correo:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+        <button type="submit" class="btn-enviar">Enviar</button>
+      </form>
+
+      
+      <div class="contacto-info">
+        <h3>Nuestra cafetería</h3>
+        <p>📍 Calle 123 #45-67, Ocaña, Colombia</p>
+        <p>📞 +57 300 123 4567</p>
+        <p>✉️ contacto@Chispasdecafe.com</p>
+      </div>
+    </div>
+  </main>
+
+  <footer id="footer"></footer>
+
+  <script src="js/components.js"></script>
+  <script>
+   
+    document.getElementById("contactForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      alert("¡Gracias por tu mensaje! Pronto nos pondremos en contacto contigo.");
+      this.reset();
+    });
+  </script>
+</body>
+</html>
