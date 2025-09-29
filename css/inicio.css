@@ -1,0 +1,56 @@
+
+.inicio-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+              url("../img/cafeteria-bg.jpg") no-repeat center center/cover;
+}
+
+
+.inicio-container {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 50px 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  max-width: 500px;
+  width: 90%;
+  animation: fadeIn 1s ease-in-out;
+}
+
+
+.inicio-container h1 {
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+  color: #3e2723;
+  font-weight: bold;
+}
+
+
+.inicio-container p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #5d4037;
+}
+
+.btn-menu {
+  display: inline-block;
+  padding: 14px 30px;
+  background: #6d4c41;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn-menu:hover {
+  background: #4e342e;
+  transform: scale(1.05);
+}
+

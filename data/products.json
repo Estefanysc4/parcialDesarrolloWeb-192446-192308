@@ -1,0 +1,53 @@
+[
+  {
+    "name": "Capuccino",
+    "price": 12000,
+    "description": "Espresso con leche vaporizada y espuma cremosa",
+    "image": "https://i.pinimg.com/736x/82/41/81/8241813c95e331dc8a04bbefb3ff72c9.jpg"
+  },
+  {
+    "name": "Latte Vainilla",
+    "price": 14000,
+    "description": "Café latte con un toque dulce de vainilla",
+    "image": "https://i.pinimg.com/736x/f7/d7/80/f7d780c9cd6953f7016dd648b3a2df15.jpg"
+  },
+    {
+    "name": "frappe",
+    "price": 10000,
+    "description": "cafe helado mezclado con hielo y leche",
+    "image": "https://i.pinimg.com/736x/35/32/ca/3532ca198f8a6b74e9d11a1890bdf0fe.jpg"
+  },
+     {
+    "name": "smoothie",
+    "price": 15000,
+    "description": "frutas y una base liquida que suele ser leche, agua o helado",
+    "image": "https://i.pinimg.com/1200x/69/00/07/690007a9ddc7d90a4c329751813291fc.jpg"
+  },
+   
+  {
+    "name": "Croissant de Mantequilla",
+    "price": 8000,
+    "description": "Panadería francesa recién horneada",
+    "image": "https://i.pinimg.com/736x/c8/83/40/c883409163bb441326b46975b022497e.jpg"
+  },
+  {
+    "name": "Cheesecake de Fresa",
+    "price": 15000,
+    "description": "Postre cremoso con mermelada de fresa natural",
+    "image": "https://i.pinimg.com/1200x/f3/03/f8/f303f81cf6fd26bba289e5adb5c13bf0.jpg"
+  
+  },
+  {
+    "name": "creppe",
+    "price": 10000,
+    "description": "tortilla muy fina, que se sirve enrollado con un relleno dulce de frutas",
+    "image": "https://i.pinimg.com/736x/ed/c4/2f/edc42f0312d73805a0fa759514e040bb.jpg"
+  },
+     {
+    "name": "galletas con dulce de fresa",
+    "price": 3000,
+    "description": "galletas de avena con dulce de fresa",
+    "image": "https://i.pinimg.com/736x/6a/c6/67/6ac6672ee3d11891a5c0273a8099c014.jpg"
+  }
+
+]
