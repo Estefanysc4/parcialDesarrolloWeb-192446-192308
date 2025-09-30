@@ -3,46 +3,68 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contacto | Chispas de café</title>
+  <title>Contacto | Chispas de Café</title>
   <link rel="stylesheet" href="css/contacto.css">
+  
 </head>
 <body>
-  <header id="header"></header>
+ 
+  <div id="header"></div>
 
-  <main class="contacto-container">
-    <h2>Contáctanos 📩</h2>
-    <p>Queremos escucharte. Déjanos tu mensaje.</p>
 
-    <div class="contacto-grid">
-    
-      <form class="contacto-form" id="contactForm">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required>
+  <div class="layout">
+ 
+    <aside id="sidebar"></aside>
 
-        <label for="email">Correo:</label>
-        <input type="email" id="email" name="email" required>
+ 
+    <main class="contacto-container">
+      <h2>Contáctanos 📩</h2>
+      <p>Queremos escucharte. Déjanos tu mensaje.</p>
 
-        <label for="mensaje">Mensaje:</label>
-        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+      <div class="contacto-grid">
+       
+        <form class="contacto-form" id="contactForm">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required>
 
-        <button type="submit" class="btn-enviar">Enviar</button>
-      </form>
+          <label for="email">Correo:</label>
+          <input type="email" id="email" name="email" required>
 
-      
-      <div class="contacto-info">
-        <h3>Nuestra cafetería</h3>
-        <p>📍 Calle 123 #45-67, Ocaña, Colombia</p>
-        <p>📞 +57 300 123 4567</p>
-        <p>✉️ contacto@Chispasdecafe.com</p>
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+          <button type="submit" class="btn-enviar">Enviar</button>
+        </form>
+
+        <div class="contacto-info">
+          <h3>Nuestra cafetería</h3>
+          <p>📍 Calle 123 #45-67, Ocaña, Colombia</p>
+          <p>📞 +57 300 123 4567</p>
+          <p>✉️ contacto@chispasdecafe.com</p>
+        </div>
       </div>
-    </div>
-  </main>
+    </main>
+  </div>
 
-  <footer id="footer"></footer>
+  
+  <div id="footer"></div>
 
-  <script src="js/components.js"></script>
   <script>
    
+    fetch("components/header.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("header").innerHTML = data);
+
+   
+    fetch("components/sidebar.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("sidebar").innerHTML = data);
+
+    fetch("components/footer.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("footer").innerHTML = data);
+
+    
     document.getElementById("contactForm").addEventListener("submit", function(e) {
       e.preventDefault();
       alert("¡Gracias por tu mensaje! Pronto nos pondremos en contacto contigo.");

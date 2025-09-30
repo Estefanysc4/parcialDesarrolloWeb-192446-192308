@@ -1,84 +1,63 @@
+.layout {
+  display: flex;
+  min-height: 80vh;
+}
 
+/* Sidebar */
+#sidebar {
+  width: 220px;
+  background-color: #f4f1ec;
+  padding: 1rem;
+  border-right: 2px solid #d9c7a1;
+}
+
+/* Contenido */
 .contacto-container {
-  max-width: 1100px;
-  margin: 40px auto;
-  padding: 20px;
+  flex: 1;
+  padding: 2rem;
 }
 
-.contacto-container h2 {
-  text-align: center;
-  font-size: 2rem;
-  margin-bottom: 10px;
-  color: #3e2723;
-}
-
-.contacto-container p {
-  text-align: center;
-  margin-bottom: 30px;
-  color: #5d4037;
-}
-
-/* Grid para formulario + info */
 .contacto-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.contacto-form,
+.contacto-info {
+  flex: 1;
 }
 
 .contacto-form {
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  background: #fff;
-  padding: 25px;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-.contacto-form label {
-  font-weight: bold;
-  color: #4e342e;
+  gap: 1rem;
 }
 
 .contacto-form input,
 .contacto-form textarea {
-  padding: 10px;
+  width: 100%;
+  padding: 0.8rem;
   border: 1px solid #ccc;
-  border-radius: 8px;
-  font-size: 1rem;
-}
-
-.contacto-form input:focus,
-.contacto-form textarea:focus {
-  outline: none;
-  border-color: #6d4c41;
-  box-shadow: 0 0 5px rgba(109, 76, 65, 0.5);
+  border-radius: 6px;
 }
 
 .btn-enviar {
-  background: #6d4c41;
+  padding: 0.8rem;
+  background-color: #8B5E3C;
   color: #fff;
   border: none;
-  padding: 12px;
-  font-size: 1rem;
-  border-radius: 8px;
+  border-radius: 6px;
   cursor: pointer;
-  transition: background 0.3s;
 }
 
 .btn-enviar:hover {
-  background: #4e342e;
+  background-color: #6e472d;
 }
-
-/* Info */
-.contacto-info {
-  background: #f9f5f3;
-  padding: 25px;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-.contacto-info h3 {
-  margin-bottom: 15px;
-  color: #3e2723;
+header, footer {
+  background: #6f4e37;
+  color: white;
+  text-align: center;
+  padding: 15px;
 }
